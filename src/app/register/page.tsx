@@ -16,6 +16,7 @@ export default function RegisterPage() {
       });
       alert('Usuário registrado com sucesso!');
       router.push('/login');
+      /* eslint-disable @typescript-eslint/no-explicit-any */
     } catch (error: any) {
       alert(error.response?.data?.message || 'Erro ao registrar.');
     }
